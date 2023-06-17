@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="1195.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.AppoinemntSchdueleController">
+   <children>
+      <AnchorPane prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #0a4eb4;">
+         <children>
+            <Label layoutX="67.0" layoutY="20.0" prefHeight="27.0" prefWidth="202.0" text="Patient Dashboard" textFill="#b8d9f8">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="66.0" prefHeight="735.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;">
+         <children>
+            <Button fx:id="pationtAdminDash" alignment="BASELINE_LEFT" layoutY="45.0" mnemonicParsing="false" onAction="#personalInformationEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Personal Information">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="appoinmentSchedule" alignment="BASELINE_LEFT" layoutY="132.0" mnemonicParsing="false" onAction="#appoinScudeualEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Appointment Schedule">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="avilableAppoinments" alignment="BASELINE_LEFT" layoutY="213.0" mnemonicParsing="false" onAction="#avilableAppoinemntsEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #4e7165;" text="Available Appointments">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookedAppoinment" alignment="BASELINE_LEFT" layoutY="302.0" mnemonicParsing="false" onAction="#bookedAppoinmentEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Booked Appointments:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="566.0" mnemonicParsing="false" onAction="#logOutEvent" prefHeight="66.0" prefWidth="120.0" style="-fx-background-color: #18273d;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableViewAppoinemnt" layoutX="412.0" layoutY="210.0" prefHeight="513.0" prefWidth="583.0">
+         <columns>
+            <TableColumn fx:id="appointmentDate" prefWidth="159.0" text="appointment_date" />
+            <TableColumn fx:id="appoinmentDay" prefWidth="135.0" text="appointment_day" />
+            <TableColumn fx:id="appoinemntTime" prefWidth="166.0" text="appointment_time" />
+            <TableColumn fx:id="appoinmentStatus" prefWidth="122.0" text="status" />
+         </columns>
+      </TableView>
+      <Button fx:id="showallappoinment" layoutX="412.0" layoutY="135.0" mnemonicParsing="false" onAction="#showAllAppoinment" prefHeight="48.0" prefWidth="260.0" style="-fx-background-color: #18273d;" text="Show  Available Appointments " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

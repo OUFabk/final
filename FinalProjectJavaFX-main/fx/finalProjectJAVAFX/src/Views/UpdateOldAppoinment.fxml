@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="665.0" prefWidth="629.0" style="-fx-background-color: #30362f;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.UpdateOldAppoinmentController">
+   <children>
+      <AnchorPane layoutX="39.0" layoutY="41.0" prefHeight="584.0" prefWidth="556.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="26.0" layoutY="93.0" prefHeight="27.0" prefWidth="180.0" text="AppointmentDate">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appoinmentDate" layoutX="221.0" layoutY="93.0" prefHeight="27.0" prefWidth="257.0" />
+            <Label layoutX="26.0" layoutY="165.0" prefHeight="27.0" prefWidth="180.0" text="AppointmentDay">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appoinmentDay" layoutX="221.0" layoutY="165.0" prefHeight="27.0" prefWidth="257.0" />
+            <Label layoutX="26.0" layoutY="244.0" prefHeight="27.0" prefWidth="180.0" text="AppointmentTime">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appoinmentTime" layoutX="221.0" layoutY="244.0" prefHeight="27.0" prefWidth="257.0" />
+            <Label layoutX="26.0" layoutY="313.0" prefHeight="27.0" prefWidth="180.0" text="Status">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveAppoinment" layoutX="86.0" layoutY="425.0" mnemonicParsing="false" onAction="#UpdateNewAppoinment" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #18273d;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelAppoinment" layoutX="282.0" layoutY="425.0" mnemonicParsing="false" onAction="#CancelNewAppoinment" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="bookedRadioAppoinment" layoutX="325.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="booked" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="statusGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="freeRadioAppoinment" layoutX="221.0" layoutY="314.0" mnemonicParsing="false" selected="true" text="Free" textFill="#383560" toggleGroup="$statusGroup">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

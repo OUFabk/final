@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="801.0" style="-fx-background-color: #f4f4f4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PatientLoginPageController">
+    <stylesheets>
+        <URL value="@patientloginpage.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="472.0" layoutX="422.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/javaFX-logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-7.0" prefHeight="569.0" prefWidth="424.0" style="-fx-background-color: #e1e5ec;">
+         <children>
+            <Label layoutX="71.0" layoutY="93.0" style="-fx-text-alignment: center;" text="Log in to patient portal">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="76.0" layoutY="195.0" prefHeight="40.0" prefWidth="277.0" />
+            <Label layoutX="76.0" layoutY="160.0" text="Username">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="258.0" text="Password">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" layoutX="73.0" layoutY="353.0" mnemonicParsing="false" onAction="#loginToDashboard" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #85C341;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="password" layoutX="74.0" layoutY="296.0" prefHeight="40.0" prefWidth="277.0" />
+            <Button fx:id="registerButton" layoutX="229.0" layoutY="353.0" mnemonicParsing="false" onAction="#registerEvent" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #177D98;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginAsAdminButton" layoutX="69.0" layoutY="417.0" mnemonicParsing="false" onAction="#loginAsAdmin" prefHeight="37.0" prefWidth="283.0" style="-fx-background-color: #58A663;" text="Login as admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

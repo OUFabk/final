@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="788.0" prefWidth="1312.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardPatientController">
+   <children>
+      <AnchorPane prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #0a4eb4;">
+         <children>
+            <Label layoutX="67.0" layoutY="20.0" prefHeight="27.0" prefWidth="202.0" text="Patient Dashboard" textFill="#b8d9f8">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="66.0" prefHeight="722.0" prefWidth="275.0" style="-fx-background-color: #e1e5ec;">
+         <children>
+            <Button fx:id="pationtAdminDash" alignment="BASELINE_LEFT" layoutY="45.0" mnemonicParsing="false" onAction="#personalInformationEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #4e7165;" text="Personal Information">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="appoinmentSchedule" alignment="BASELINE_LEFT" layoutY="132.0" mnemonicParsing="false" onAction="#appoinScudeualEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Appointment Schedule">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="avilableAppoinments" alignment="BASELINE_LEFT" layoutY="213.0" mnemonicParsing="false" onAction="#avilableAppoinemntsEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Available Appointments">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="bookedAppoinment" alignment="BASELINE_LEFT" layoutY="302.0" mnemonicParsing="false" onAction="#bookedAppoinmentEvent" prefHeight="66.0" prefWidth="296.0" style="-fx-background-color: #e1e5ec;" text="Booked Appointments:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="566.0" mnemonicParsing="false" onAction="#logOutEvent" prefHeight="66.0" prefWidth="120.0" style="-fx-background-color: #18273d;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="usersTableView" layoutX="322.0" layoutY="245.0" prefHeight="364.0" prefWidth="964.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="57.0" text="id" />
+            <TableColumn fx:id="usernameCol" prefWidth="125.0" text="Username" />
+            <TableColumn fx:id="passwordCol" prefWidth="92.0" text="Password" />
+            <TableColumn fx:id="firstnameCol" prefWidth="105.0" text="Firstname" />
+            <TableColumn fx:id="lastnameCol" prefWidth="104.0" text="Lastname" />
+            <TableColumn fx:id="ageCol" prefWidth="64.0" text="Age" />
+            <TableColumn fx:id="emailCol" prefWidth="143.0" text="Email" />
+            <TableColumn fx:id="phoneCol" minWidth="1.0" prefWidth="93.0" text="phone" />
+            <TableColumn fx:id="genderCol" prefWidth="96.0" text="Gender" />
+            <TableColumn fx:id="roleCol" prefWidth="98.0" text="Role" />
+         </columns>
+      </TableView>
+      <Button fx:id="showallpatient" layoutX="322.0" layoutY="132.0" mnemonicParsing="false" onAction="#showAllAppoinment" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: #18273d;" text="Show All Patient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
