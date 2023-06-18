@@ -10,7 +10,7 @@ import javafx.scene.Node;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class ViewManager {
     
