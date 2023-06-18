@@ -28,7 +28,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Bahaa El-Den
+ * @author WAFAco
  */
 public class AdminLoginPageController implements Initializable {
 
