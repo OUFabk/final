@@ -14,7 +14,7 @@ import javafx.scene.control.Button;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class ChoisceAdORpaController implements Initializable {
 
