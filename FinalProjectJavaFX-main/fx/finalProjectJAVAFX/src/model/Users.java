@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class Users {
     private int id;
