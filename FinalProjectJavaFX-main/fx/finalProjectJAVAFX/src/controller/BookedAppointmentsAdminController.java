@@ -26,7 +26,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class BookedAppointmentsAdminController implements Initializable {
     @FXML
