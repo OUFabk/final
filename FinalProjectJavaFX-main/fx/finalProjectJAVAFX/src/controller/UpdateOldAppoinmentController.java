@@ -24,7 +24,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class UpdateOldAppoinmentController implements Initializable {
         private Appoinment oldAppoinment;
