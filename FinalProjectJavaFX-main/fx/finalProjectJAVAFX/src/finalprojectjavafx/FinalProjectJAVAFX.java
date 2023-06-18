@@ -17,7 +17,7 @@ import view.ViewManager;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class FinalProjectJAVAFX extends Application {
      
