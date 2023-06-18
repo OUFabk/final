@@ -32,7 +32,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class AdminDashboardController implements Initializable {
     public static Users selectedUserToUpdate;
