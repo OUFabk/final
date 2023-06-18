@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class DB {
    private static DB db = null;
