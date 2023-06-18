@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class Login extends Stage{
     private Scene loginToAdminDashboard;
