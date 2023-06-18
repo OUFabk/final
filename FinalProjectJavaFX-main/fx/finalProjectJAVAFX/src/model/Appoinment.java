@@ -17,7 +17,7 @@ import java.util.Date;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class Appoinment {
     private int id;
