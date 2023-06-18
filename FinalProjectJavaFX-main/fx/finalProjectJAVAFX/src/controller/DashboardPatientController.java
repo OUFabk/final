@@ -23,7 +23,7 @@ import model.ShowPatient;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class DashboardPatientController implements Initializable {
 
