@@ -22,7 +22,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class UpdatepatientController implements Initializable {
     private Users oldUser;
