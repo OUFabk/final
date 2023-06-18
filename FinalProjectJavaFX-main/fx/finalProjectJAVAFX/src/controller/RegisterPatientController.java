@@ -22,7 +22,7 @@ import view.ViewManager;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class RegisterPatientController implements Initializable {
 
