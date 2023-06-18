@@ -34,7 +34,7 @@ import model.Appoinment;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class AppointmentsAdminDashboardController implements Initializable {
      public static Appoinment selectedAppoinmentToUpdate;
