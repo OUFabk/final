@@ -37,7 +37,7 @@ import view.Login;
 /**
  * FXML Controller class
  *
- * @author Mahmoud and Bahaa
+ * @author WAFAco
  */
 public class PatientLoginPageController implements Initializable {
 
