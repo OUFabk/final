@@ -15,7 +15,7 @@ import java.util.Date;
 
 /**
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class AvailableAppoinemnt {
      private int id;
