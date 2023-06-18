@@ -25,7 +25,7 @@ import model.ScheduleAppoinemnt;
 /**
  * FXML Controller class
  *
- * @author Mahmoud
+ * @author WAFAco
  */
 public class AvilableAppoinemntController implements Initializable {
      @FXML
